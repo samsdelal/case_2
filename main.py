@@ -8,5 +8,10 @@ for month in range(12):
     annual_income += income
 print(annual_income)"""
 
+family = input('Выберите  семейный статус налогоплатильщика\n'
+               '\n'
+               '1.[Один субъект]\n'
+               '2.[Супружеская пара]\n'
+               '3.[Родитель-одиночка]')
 
 
