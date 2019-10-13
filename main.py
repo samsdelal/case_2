@@ -37,24 +37,16 @@ elif (0 <= incomes <= 12950) and family == "3":
     tax = incomes * 0.1
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
-#25%
-if (36_901 <= incomes <= 89_350) and family == "1":
-    tax = incomes * 0.25
+if (0 <= incomes <= 9075) and family == "1":
+    tax = incomes * 0.1
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (73_801 <= incomes <= 148_850) and family == "2":
-    tax = incomes * 0.25
+elif (0 <= incomes <= 18150) and family == "2":
+    tax = incomes * 0.1
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (49_401 <= incomes <= 127_550) and family == "3":
-    tax = incomes * 0.25
+elif (0 <= incomes <= 12950) and family == "3":
+    tax = incomes * 0.1
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
-#35%
-if (405101 <= incomes <= 406750) and family == "1":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (405101 <= incomes <= 457600) and family == "2":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (405101 <= incomes <= 432200 ) and family == "3":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+
+
+
