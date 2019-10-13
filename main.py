@@ -12,9 +12,18 @@ family = input(lc.TXT_STATUSFAM0 + "\n" +
                lc.TXT_STATUSFAM1 + "\n" +
                lc.TXT_STATUSFAM2 + "\n" +
                lc.TXT_STATUSFAM3 + "\n" +
-               "---")
+               "--- ")
 print('---------------------------')
-incomes = int(input(lc.TXT_INPCOM + "--- "))
+name_month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+QUESTION = 'Какой доход за месяц?'
+annual_income = 0
+for month in range(12):
+ print('{} {}:'.format(QUESTION,name_month[month], end =''))
+ income = float(input())
+ annual_income += income
+ incomes = annual_income
+print('Ваш годовой доход составил - ', incomes,lc.TXT_TAX2)
+print('---------------------------')
 #10
 if (0 <= incomes <= 9075) and family == "1":
     tax = incomes * 0.1
@@ -45,7 +54,7 @@ elif (36901 <=  incomes <= 89350) and family == '1':
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
 elif (73801 <= incomes <= 148850) and family == '2':
-    tax = tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (incomes - 73801)
+    tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (incomes - 73801)
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
 elif (49401 <= incomes <= 127550 ) and family == '3':
