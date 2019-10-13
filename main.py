@@ -16,11 +16,11 @@ print(annual_income)"""
 
 import local as lc
 
-family = input(lc.TXT_STATUS+"\n"
-               "\n"
-               "1.[Один субъект]\n"
-               "2.[Супружеская пара]\n"
-               "3.[Родитель-одиночка]\n"
+family = input(lc.TXT_STATUSFAM0+"\n"+
+               "\n"+
+               lc.TXT_STATUSFAM1+"\n"+
+               lc.TXT_STATUSFAM2+"\n"+
+               lc.TXT_STATUSFAM3"\n"+
                "---")
 print('---------------------------')
 incomes = int(input("Введите свой доход --- "))
