@@ -1,7 +1,7 @@
 # string constants
 """Case-study #0 My first code
 Developers:
-Makarov A (--%), Kuznecov B(30%), Odoevcev S(50%) 
+Makarov A (39.999999%), Kuznecov B(30%), Odoevcev S(50%)
 
 
 """
