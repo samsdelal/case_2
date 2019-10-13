@@ -16,13 +16,13 @@ print(annual_income)"""
 
 import local as lc
 
-family = input(lc.TXT_STATUSFAM0+"\n"+
-               "\n"+
-               lc.TXT_STATUSFAM1+"\n"+
-               lc.TXT_STATUSFAM2+"\n"+
-               lc.TXT_STATUSFAM3+"\n"+
+family = input(lc.TXT_STATUSFAM0 + "\n" +
+               "\n" +
+               lc.TXT_STATUSFAM1 + "\n" +
+               lc.TXT_STATUSFAM2 + "\n" +
+               lc.TXT_STATUSFAM3 + "\n" +
                "---")
 print('---------------------------')
-incomes = int(input(lc.TXT_INPCOM+ "--- "))
+incomes = int(input(lc.TXT_INPCOM + "--- "))
 
 
