@@ -29,17 +29,13 @@ incomes = int(input(lc.TXT_INPCOM + "--- "))
 
 if (0 < incomes < 9075) and family == "1":
     tax = incomes*0.1
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+    print("Ваш налог составит",tax,"долларов")
 elif (0 < incomes < 18150) and family == "2":
     tax = incomes * 0.1
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+    print("Ваш налог составит", tax, "долларов")
 elif (0 < incomes < 12950) and family == "3":
     tax = incomes * 0.1
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-elif (9076 < incomes <=36900) and family == "1":
-    tax = (0.1*9076)+0.15(incomes-9076)
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+    print("Ваш налог составит", tax, "долларов")
 
 
 
