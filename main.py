@@ -20,7 +20,7 @@ family = input(lc.TXT_STATUSFAM0+"\n"+
                "\n"+
                lc.TXT_STATUSFAM1+"\n"+
                lc.TXT_STATUSFAM2+"\n"+
-               lc.TXT_STATUSFAM3"\n"+
+               lc.TXT_STATUSFAM3+"\n"+
                "---")
 print('---------------------------')
 incomes = int(input("Введите свой доход --- "))
