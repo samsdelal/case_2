@@ -50,6 +50,7 @@ elif (12951 <= incomes <= 49400) and family = "3":
      tax = (0.1 * 12951) + 0.15(incomes - 12951)
      print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
+#33    
 elif (186351 <= incomes <= 405100) and family = "1":
      tax = (0.1*9076)+0.15(36901-9076)+0.25(89351-36901)+0.28(186351-89351)+0.33(incomes-186351)
      print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
@@ -62,7 +63,7 @@ elif (186351 <= incomes <= 405100) and family = "3":
      tax = (0.1*12951)+0.15(49401-12951)+0.25(127551-49401)+0.28(206601-127551)+0.33(incomes-206601)
      print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
-#33
+
 elif (36901 <= incomes <= 89350) and family == "1":
     tax = incomes * 0.25
     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
