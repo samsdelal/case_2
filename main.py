@@ -1,20 +1,9 @@
 
 
 # string constants
-"""Case-study #0 My first code
+"""Case-study #2 - USA TAX CALCULATOR
 Developers:
-Makarov A (39.999999%), Kuznecov B(30%), Odoevcev S(50%)
-
-
-"""
-"""name_month = [JAN, FAB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC]
-
-annual_income = 0
-for month in range(12):
-    print('{} {}:'.format(QUESTION,name_month[month], end ='')
-    income = float(input())
-    annual_income += income
-print(annual_income)"""
+Makarov A (39.999999%), Kuznecov B(30%), Odoevcev S(50%)"""
 
 import local as lc
 
@@ -49,36 +38,7 @@ elif (18151 <= incomes <= 73800) and family == '2':
 elif (12951 <= incomes <= 49400) and family = "3":
      tax = (0.1 * 12951) + 0.15(incomes - 12951)
      print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-#33    
-elif (186351 <= incomes <= 405100) and family == "1":
-     tax = (0.1*9076)+0.15(36901-9076)+0.25(89351-36901)+0.28(186351-89351)+0.33(incomes-186351)
-     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-elif (186351 <= incomes <= 405100) and family == "2":
-     tax = (0.1*18151)+0.15(73801-18151)+0.25(148851-73801)+0.28(226851-148851)+0.33(incomes-226851)
-     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-elif (186351 <= incomes <= 405100) and family == "3":
-     tax = (0.1*12951)+0.15(49401-12951)+0.25(127551-49401)+0.28(206601-127551)+0.33(incomes-206601)
-     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-
-
-# 28%
-
-elif (89351 <=  incomes <= 186350) and family == '1':
-    tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (89351 - 36901) + 0.28 * (incomes - 89351)
-    print("Ваш налог составит", tax, "долларов")
-
-elif (148851 <= incomes <= 226850) and family == '2':
-    tax = tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (148851 - 73801) + 0.28 * (incomes - 148851)
-    print("Ваш налог составит", tax, "долларов")
-
-elif (127551 <= incomes <= 206600 ) and family == '3':
-    tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (127551 - 49401) + 0.28 * (incomes - 127551)
-    print("Ваш налог составит", tax, "долларов")
-
+    
 # 25%
 elif (36901 <=  incomes <= 89350) and family == '1':
     tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (incomes - 36901)
@@ -90,7 +50,35 @@ elif (73801 <= incomes <= 148850) and family == '2':
 
 elif (49401 <= incomes <= 127550 ) and family == '3':
     tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (incomes - 49401)
+    print("Ваш налог составит", tax, "долларов")  
+    
+# 28%
+
+elif (89351 <=  incomes <= 186350) and family == '1':
+    tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (89351 - 36901) + 0.28 * (incomes - 89351)
     print("Ваш налог составит", tax, "долларов")
+
+elif (148851 <= incomes <= 226850) and family == '2':
+    tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (148851 - 73801) + 0.28 * (incomes - 148851)
+    print("Ваш налог составит", tax, "долларов")
+
+elif (127551 <= incomes <= 206600 ) and family == '3':
+    tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (127551 - 49401) + 0.28 * (incomes - 127551)
+    print("Ваш налог составит", tax, "долларов")
+
+#33    
+elif (186351 <= incomes <= 405100) and family == "1":
+     tax = (0.1*9076)+0.15(36901-9076)+0.25(89351-36901)+0.28(186351-89351)+0.33*(incomes-186351)
+     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+
+elif (186351 <= incomes <= 405100) and family == "2":
+     tax = (0.1*18151)+0.15(73801-18151)+0.25(148851-73801)+0.28(226851-148851)+0.33*(incomes-226851)
+     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+
+elif (186351 <= incomes <= 405100) and family == "3":
+     tax = (0.1*12951)+0.15(49401-12951)+0.25(127551-49401)+0.28(206601-127551)+0.33*(incomes-206601)
+     print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+
 
 # 35%
 elif (405101 <= incomes <= 406750) and family == '1':
