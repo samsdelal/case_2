@@ -1,11 +1,10 @@
-
+import local as lc
 
 # string constants
 """Case-study #2 - USA TAX CALCULATOR
 Developers:
-Makarov A (39.999999%), Kuznecov B(30%), Odoevcev S(50%)"""
+Makarov A (40%), Kuznecov B(40%), Odoevcev S(40%)"""
 
-import local as lc
 
 family = input(lc.TXT_STATUSFAM0 + "\n" +
                "\n" +
