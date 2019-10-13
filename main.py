@@ -64,25 +64,6 @@ elif (186351 <= incomes <= 405100) and family = "3":
      print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
 
-elif (36901 <= incomes <= 89350) and family == "1":
-    tax = incomes * 0.25
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (73801 <= incomes <= 148850) and family == "2":
-    tax = incomes * 0.25
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (49401 <= incomes <= 127550) and family == "3":
-    tax = incomes * 0.25
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-
-elif (405101 <= incomes <= 406750) and family == "1":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (405101 <= incomes <= 457600) and family == "2":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
-elif (405101 <= incomes <= 432200) and family == "3":
-    tax = incomes * 0.35
-    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
 # 28%
 
@@ -98,12 +79,35 @@ elif (127551 <= incomes <= 206600 ) and family == '3':
     tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (127551 - 49401) + 0.28 * (incomes - 127551)
     print("Ваш налог составит", tax, "долларов")
 
+# 25%
+elif (36901 <=  incomes <= 89350) and family == '1':
+    tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (incomes - 36901)
+    print("Ваш налог составит", tax, "долларов")
+
+elif (73801 <= incomes <= 148850) and family == '2':
+    tax = tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (incomes - 73801)
+    print("Ваш налог составит", tax, "долларов")
+
+elif (49401 <= incomes <= 127550 ) and family == '3':
+    tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (incomes - 49401)
+    print("Ваш налог составит", tax, "долларов")
+
+# 35%
+elif (405101 <= incomes <= 406750) and family == '1':
+    tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (89351 - 36901) + 0.28 * (186351 - 89351) + 0.33 * (405101 - 186351) + 0.35 * (incomes - 405101)
+    print("Ваш налог составит", tax, "долларов")
+elif (405101 <= incomes >= 457600) and family == '2':
+    tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (148851 - 73801) + 0.28 * (226851 - 148851) + 0.33 * (405101 - 226851) + 0.35 * (incomes - 405101)
+    print("Ваш налог составит", tax, "долларов")
+elif (405101 <= incomes <= 432200 ) and family == '3':
+    tax = 0.1 * (12951 - 0) + 0.15 * (49401 - 12951) + 0.25 * (127551 - 49401) + 0.28 * (206601 - 127551) + 0.33 * (405101 - 206601) + 0.35 * (incomes - 405101)
+
+
 # 39.6 %
 
 elif (incomes >= 406751) and family == '1':
     tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (89351 - 36901) + 0.28 * (186351 - 89351) + 0.33 * (405101 - 186351) + 0.35 * (406751 - 405101) + 0.396 * (incomes - 406751)
     print("Ваш налог составит", tax, "долларов")
-
 elif (incomes >= 457601) and family == '2':
     tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (148851 - 73801) + 0.28 * (226851 - 148851) + 0.33 * (405101 - 226851) + 0.35 * (457601 - 405101) + 0.396 * (incomes - 457601)
     print("Ваш налог составит", tax, "долларов")
