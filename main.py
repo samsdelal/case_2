@@ -16,14 +16,16 @@ for month in range(12):
     annual_income += income
 print(annual_income)"""
 
-family = input("Выберите  семейный статус налогоплатильщика\n"
-               "\n"
-               "1.[Один субъект]\n"
-               "2.[Супружеская пара]\n"
-               "3.[Родитель-одиночка]\n"
+import local as lc
+
+family = input(lc.TXT_STATUSFAM0 + "\n" +
+               "\n" +
+               lc.TXT_STATUSFAM1 + "\n" +
+               lc.TXT_STATUSFAM2 + "\n" +
+               lc.TXT_STATUSFAM3 + "\n" +
                "---")
 print('---------------------------')
-incomes = int(input("Введите свой доход --- "))
+incomes = int(input(lc.TXT_INPCOM + "--- "))
 
 if (0 < incomes < 9075) and family == "1":
     tax = incomes*0.1
