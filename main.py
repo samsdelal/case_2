@@ -1,6 +1,6 @@
 
-# string constants
 
+# string constants
 """Case-study #0 My first code
 Developers:
 Makarov A (39.999999%), Kuznecov B(30%), Odoevcev S(50%)
@@ -27,29 +27,35 @@ family = input(lc.TXT_STATUSFAM0 + "\n" +
 print('---------------------------')
 incomes = int(input(lc.TXT_INPCOM + "--- "))
 
-if (0 < incomes < 9075) and family == "1":
-    tax = incomes*0.1
-    print("Ваш налог составит",tax,"долларов")
-elif (0 < incomes < 18150) and family == "2":
+if (0 <= incomes <= 9075) and family == "1":
     tax = incomes * 0.1
-    print("Ваш налог составит", tax, "долларов")
-elif (0 < incomes < 12950) and family == "3":
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (0 <= incomes <= 18150) and family == "2":
     tax = incomes * 0.1
-    print("Ваш налог составит", tax, "долларов")
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (0 <= incomes <= 12950) and family == "3":
+    tax = incomes * 0.1
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
-# 28%
+elif (36901 <= incomes <= 89350) and family == "1":
+    tax = incomes * 0.25
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (73801 <= incomes <= 148850) and family == "2":
+    tax = incomes * 0.25
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (49401 <= incomes <= 127550) and family == "3":
+    tax = incomes * 0.25
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
-elif (89351 <=  incomes <= 186350) and family == '1':
-    tax = 0.1 * (9076 - 0) + 0.15 * (36901 - 9076) + 0.25 * (89351 - 36901) + 0.28 * (incomes - 89351)
-    print("Ваш налог составит", tax, "долларов")
-
-elif (148851 <= incomes <= 226850) and family == '2':
-    tax = tax = 0.1 * (18151 - 0) + 0.15 * (73801 - 18151) + 0.25 * (148851 - 73801) + 0.28 * (incomes - 148851)
-    print("Ваш налог составит", tax, "долларов")
-
-elif (127551 <= incomes <= 206600 ) and family == '3':
-    tax = 0.1 * (12951 - 0) + 0.15 * (494011 - 12951) + 0.25 * (127551 - 49401) + 0.28 * (incomes - 127551)
-    print("Ваш налог составит", tax, "долларов")
+elif (405101 <= incomes <= 406750) and family == "1":
+    tax = incomes * 0.35
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (405101 <= incomes <= 457600) and family == "2":
+    tax = incomes * 0.35
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
+elif (405101 <= incomes <= 432200) and family == "3":
+    tax = incomes * 0.35
+    print(lc.TXT_TAX1, tax, lc.TXT_TAX2)
 
 # 39.6 %
 
