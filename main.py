@@ -1,3 +1,5 @@
+
+
 # string constants
 """Case-study #0 My first code
 Developers:
@@ -22,5 +24,18 @@ family = input("Выберите  семейный статус налогопл
                "---")
 print('---------------------------')
 incomes = int(input("Введите свой доход --- "))
+
+if (0 < incomes < 9075) and family == "1":
+    tax = incomes*0.1
+    print("Ваш налог составит",tax,"долларов")
+elif (0 < incomes < 18150) and family == "2":
+    tax = incomes * 0.1
+    print("Ваш налог составит", tax, "долларов")
+elif (0 < incomes < 12950) and family == "3":
+    tax = incomes * 0.1
+    print("Ваш налог составит", tax, "долларов")
+
+
+
 
 
