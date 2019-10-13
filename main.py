@@ -23,6 +23,6 @@ family = input(lc.TXT_STATUSFAM0+"\n"+
                lc.TXT_STATUSFAM3+"\n"+
                "---")
 print('---------------------------')
-incomes = int(input("Введите свой доход --- "))
+incomes = int(input(lc.TXT_INPCOM+ "--- "))
 
 
